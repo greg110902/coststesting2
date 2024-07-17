@@ -7,3 +7,5 @@ async function doIt() {
 
     submit(env, payer, value, affecting)
 }
+
+document.getElementById('button').addEventListener('click', doIt)
