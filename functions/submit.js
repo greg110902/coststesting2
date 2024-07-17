@@ -1,4 +1,4 @@
-export function submit(env, payer, value, affecting){
+export async function onRequest(payer, value, affecting){
     const owedByAffected = value / (affecting.length + 1)
     const owedToPayer = value * (affecting.length) / (affecting.length + 1)
     for (const payee of affecting){
